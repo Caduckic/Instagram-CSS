@@ -210,23 +210,126 @@ body {
 }
 
 .main-end-column {
-  border: 1px solid lightgray;
-  display: block;
+  display: flex;
+  flex-direction: column;
   box-sizing: content-box;
   height: 100vh;
   width: 319px;
+  margin-top: 20px;
+}
+
+.main-end-column > * {
+  display: flex;
+  align-items: center;
+}
+
+.end-current-user {
+  box-sizing: border-box;
+  height: 66px;
+  margin: 16px 0 10px;
+}
+
+.end-current-user-icon-container {
+  height: 56px;
+  width: 56px;
+}
+
+.end-current-user-icon-container img, .end-suggested-user-icon-container img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.end-username-container {
+  font-size: 14px;
+  margin-left: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.end-username {
+  font-weight: bold;
+}
+
+.end-user-button {
+  font-size: 14px;
+  flex-grow: 1;
+  text-align: end;
+  color: blue;
+  line-height: 26px;
+  text-decoration: none;
+}
+
+.end-user-button:active {
+  opacity: 0.6;
+}
+
+.end-suggested-users {
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+
+.end-suggested-users-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 14px;
+  padding-left: 2px;
+}
+
+.suggestions-header {
+  width: 100%;
+  display: flex;
+  font-size: 14px;
+}
+
+.suggestions-text {
+  color: gray;
+  font-weight: bold;
+}
+
+.suggestions-button {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.end-suggested-user {
+  display: flex;
+  text-justify: center;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.end-suggested-user-icon-container {
+  width: 32px;
+  height: 32px;
+}
+
+.end-footer {
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 12px;
+}
+
+.footer-about, .footer-credit {
+  color: gray;
+  margin-bottom: 16px;
 }
 
 .footer {
-  box-sizing: content-box;
   display: none;
-  width: inherit;
+  width: 100%;
   height: 157;
+  padding-bottom: 52px;
 }
 
 .footer-flex {
   box-sizing: border-box;
   display: flex;
+  align-items: center;
+  flex-direction: column;
   padding: 16px;
 }
 
@@ -347,7 +450,6 @@ body {
 }
 
 .card-date {
-  font-variant: small-caps;
   height: 18px;
   margin-bottom: 12px;
   display: block;
