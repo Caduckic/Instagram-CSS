@@ -344,6 +344,48 @@ body {
   border-radius: 8px;
 }
 
+.story-card-end {
+  width: 16px;
+  height: 100%;
+}
+
+.story-card-users {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.story-card-story {
+  box-sizing: border-box;
+  width: 66px;
+  height: 100%;
+}
+
+.story-card-user-icon-container {
+  box-sizing: border-box;
+  width: 66px;
+  height: 66px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: conic-gradient(#DE00A9 0deg, #D000C3 30deg, #D000C3 65deg, #D900A5 85deg, #E7018D 100deg, #FE4B28 140deg, #FF9700 150deg, #FFC800 180deg, #FFC800 235deg, #FF9200 280deg, #FF2748 330deg, #F30180 345deg, #DE00A9 360deg);
+  border-radius: 50%;
+  margin-bottom: 2px;
+}
+
+.story-card-user-icon-container img {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.story-card-username {
+  text-align: center;
+  font-size: 12px;
+}
+
 .card-flex {
   display: flex;
   flex-wrap: nowrap;
@@ -380,6 +422,41 @@ body {
   height: 57px;
   width: 100%;
   border-bottom: 1px solid lightgray;
+  align-items: center;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  margin: 8px 4px 8px 12px;
+  flex-grow: 1;
+}
+
+.card-header-user-icon-container {
+  width: 32px;
+  height: 32px;
+}
+
+.card-header-user-icon-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card-header-name {
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.card-more-button {
+  width: 40px;
+  height: 40px;
+  padding-right: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-middle {
@@ -409,6 +486,7 @@ body {
 }
 
 .card-buttons {
+  padding: 0 4px;
   display: flex;
   height: 40px;
   margin-top: 4px;
@@ -416,19 +494,30 @@ body {
 
 .card-button, .card-button-bookmark {
   box-sizing: border-box;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 40px;
   height: 40px;
 }
 
 .card-button-bookmark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: auto;
+}
+
+.card-button-bookmark span, .card-button span {
+  font-size: 28px;
 }
 
 .card-likes {
   height: 18px;
   margin-bottom: 8px;
   display: block;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .card-desc-view {
@@ -441,18 +530,24 @@ body {
   width: 100%;
   height: auto;
   margin-bottom: 8px;
+  font-size: 14px;
 }
 
 .card-view-comments {
   width: 100%;
   height: 18px;
   margin-bottom: 8px;
+  font-size: 14px;
+  color: #8E8E8E;
 }
 
 .card-date {
   height: 18px;
   margin-bottom: 12px;
   display: block;
+  font-size: 10px;
+  letter-spacing: 0.2px;
+  color: #8E8E8E;
 }
 
 .card-comment-form-container {
@@ -474,9 +569,13 @@ body {
 .card-emoji-button {
   box-sizing: content-box;
   display: block;
-  width: 24px;
-  height: 24px;
-  padding: 8px 12px 8px 0;
+  width: 28px;
+  height: 28px;
+  padding: 6px 8px 6px 0;
+}
+
+.card-emoji-button span {
+  font-size: 28px;
 }
 
 .card-text-input {
@@ -505,6 +604,7 @@ body {
   color: blue;
   text-decoration: none;
   display: block;
+  font-size: 14px;
   width: 27px;
   height: 18px;
 }
